@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/kajian-tampilan.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <img src="assets/images/logo.png" alt="" />
+            <div class="menu-icon" id="menu-icon">
+                <i class="ph ph-list"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="">Pengaturan</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+        </nav>
+
+        <section class="informasi container">
+            <div class="left-section">
+                <img src="assets/images/home-user.png" alt="Struktur Organisasi" class="org-chart" />
+            </div>
+            <div class="right-section">
+                <h3 class="section-title">
+                    Kajian Integrasi Antar Moda Transpportasi Kabupaten Empat Lawang (2017)
+                </h3>
+                <button class="btn-ubah" onclick="showForm2()">Ubah</button>
+                <button class="btn-green">Kirim Kajian</button>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <td class="kiri">Kategori</td>
+                            <td>Informasi & komunikasi</td>
+                        </tr>
+                        <tr>
+                            <td class="kiri">OPD</td>
+                            <td>
+                                Badan Perencanaan Pembangunan Daerah, Penelitian dan
+                                Pengembangan
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="kiri">Contact Person</td>
+                            <td>
+                                (0711) 353522
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="kiri">Tahun</td>
+                            <td>2018</td>
+                        </tr>
+                        <tr>
+                            <td class="kiri">Status</td>
+                            <td>Aktif</td>
+                        </tr>
+                        <tr>
+                            <td class="kiri">Executive Summary</td>
+                            <td class="kanan"><img src="assets/images/icon-download.png" alt=""
+                                    onclick="showForm(event, 1)">Unduh</td>
+                        </tr>
+                        <tr>
+                            <td class="kiri">Dokumen Lengkap</td>
+                            <td class="kanan"><img src="assets/images/icon-download.png" alt=""
+                                    onclick="showForm(event, 2)">Unduh</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="form-container" class="form-container">
+        <div class="form-content">
+            <h3>Ubah Kajian</h3>
+            <form action="#">
+                <label for="publikasi">Kategori</label>
+                <select id="publikasi" name="publikasi">
+                    <option value="">Pilih Kategori</option>
+                </select>
+
+                <label for="judul">Contact Person</label>
+                <input type="text" id="judul" name="judul">
+
+                <label for="publikasi">Tahun</label>
+                <select id="publikasi" name="publikasi">
+                    <option value="">Pilih</option>
+                </select>
+
+                <label for="judul">Judul</label>
+                <input type="text" id="judul" name="judul">
+
+                <label for="publikasi">Status</label>
+                <select id="publikasi" name="publikasi">
+                    <option value="">Aktif</option>
+                    <option value="">Tidak Aktif</option>
+                </select>
+
+                <label for="gambar">Gambar Cover</label>
+                <input type="file" id="gambar" name="gambar">
+                <small>Jenis file JPG ukuran 800 x 1132 pixel</small>
+
+                <label for="gambar">Gambar Ilustrasi</label>
+                <input type="file" id="gambar" name="gambar">
+                <small>Jenis file JPG ukuran 800 x 570 pixel</small>
+
+                <label for="judul">Abstrak</label>
+                <input type="text" id="judul" name="judul" placeholder="">
+
+                <button type="submit" class="btn-green">Simpan</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="upload-form-container" class="form-container">
+        <div class="form-content">
+            <h3>Unggah Executive Summary & Dokumen Lengkap</h3>
+            <form action="#">
+                <label for="gambar">Executive Summary</label>
+                <input type="file" id="gambar" name="gambar">
+                <small>Jenis file mp4, pdf, zip</small>
+                <br><br>
+                <label for="gambar">Dokumen Lengkap</label>
+                <input type="file" id="gambar" name="gambar">
+                <small>Jenis file mp4, pdf, zip</small>
+                <br><br>
+                <button type="submit" class="btn-green">Simpan</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <h5>Copyright © 2024. Bappeda Litbang Kabupaten Empat Lawang</h5>
+    </footer>
+
+    <script src="assets/js/kajian-tampilan.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/inovasi-lampiran.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <img src="assets/images/logo.png" alt="" />
+            <div class="menu-icon" id="menu-icon">
+                <i class="ph ph-list"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="">Pengaturan</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+        </nav>
+
+        <section class="lampiran container">
+            <div class="title">
+                <h1>Lampiran Kelengkapan Data</h1>
+            </div>
+
+            <table class="lampiran-table">
+                <tbody>
+                    <tr>
+                        <td class="kiri">Regulasi Inovasi Daerah</td>
+                        <td class="kanan"><img src="assets/images/icon-download.png" alt=""
+                                onclick="showForm(event, 1)">Regulasi/kebijakan yang ditetapkan untuk mendukung Inovasi
+                            Daerah</td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Ketersediaan SDM terhadap inovasi daerah</td>
+                        <td class="kanan"><img src="assets/images/icon-download.png" alt=""
+                                onclick="showForm(event, 2)">Jumlah SDM yang melaksanakan inovasi daerah ini. Jumlahnya
+                            ada beberapa orang.</td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Dukungan anggaran</td>
+                        <td class="kanan"><img src="assets/images/icon-download.png" alt=""
+                                onclick="showForm(event, 3)">Anggaran untuk inovasi daerah dituangkan dalam APBD</td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Penggunaan IT</td>
+                        <td class="kanan"><img src="assets/images/icon-download.png" alt=""
+                                onclick="showForm(event, 4)">Penggunaan alat elektronik, teknologi dan sistem informasi
+                            dalam inovasi daerah</td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Sosialisasi kebijakan</td>
+                        <td class="kanan"><img src="assets/images/icon-download.png" alt=""
+                                onclick="showForm(event, 5)">Penyebarluasan inovasi daerah dari pemerintah daerah kepada
+                            pengguna inovasi daerah (pengguna dapat Pegawai ASN atau masyarakat)</td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Bimtek inovasi</td>
+                        <td class="kanan"><img src="assets/images/icon-download.png" alt=""
+                                onclick="showForm(event, 6)">Penggunaan alat elektronik, teknologi dan sistem informasi
+                            dalam inovasi daerah</td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Program dan kegiatan di Renstra OPD</td>
+                        <td class="kanan"><img src="assets/images/icon-download.png" alt=""
+                                onclick="showForm(event, 7)">Inovasi daerah masuk dalam program dan kegiatan Renstra OPD
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Jejaring inovasi</td>
+                        <td class="kanan"><img src="assets/images/icon-download.png" alt=""
+                                onclick="showForm(event, 8)">Interaksi antar pelaku inovasi daerah, misalkan antar OPD,
+                            antar Pemda atau melibatkan pelayanan publik</td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Replikasi</td>
+                        <td class="kanan"><img src="assets/images/icon-download.png" alt=""
+                                onclick="showForm(event, 9)">Inovasi daerah yang telah berhasil direplikasi ke daerah
+                            lain</td>
+                    </tr>
+                    <tr>
+                        <td class="kiri">Kualitas Inovasi Daerah</td>
+                        <td class="kanan"><img src="assets/images/icon-download.png" alt=""
+                                onclick="showForm(event, 10)">Inovasi daerah yang diterapkan mengandung unsur kriteria
+                            kebaharuan sesuai kewenangan dan dapat direplikasi</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </div>
+
+    <div class="upload-form" id="form-container" style="display: none;">
+        <h2>Unggah Lampiran</h2>
+        <p>Unggah lampiran Regulasi Inovasi Daerah</p>
+        <p>Jenis file mp4, pdf, zip</p>
+        <input type="file" id="fileInput">
+        <button class="btn" id="uploadBtn">Simpan</button>
+    </div>
+
+    <footer>
+        <h5>Copyright © 2024. Bappeda Litbang Kabupaten Empat Lawang</h5>
+    </footer>
+
+    <script src="assets/js/inovasi-lampiran.js"></script>
+</body>
+
+</html>
