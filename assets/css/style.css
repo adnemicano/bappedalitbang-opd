@@ -92,3 +92,22 @@ body {
 .btn:hover {
     background: #87C139;
 }
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+        width: 300px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .textbox input {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
