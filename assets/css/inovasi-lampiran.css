@@ -41,9 +41,6 @@ nav img {
     height: 60px;
 }
 
-nav .menu-icon {
-    display: none;
-}
 
 nav .nav-links {
     display: flex;
@@ -67,6 +64,14 @@ nav .nav-links li a {
 
 nav .nav-links li a:hover {
     color: #38E54D;
+}
+
+.menu-icon {
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+    color: white;
+    margin-left: auto;
 }
 
 .container {
@@ -176,4 +181,42 @@ footer h5 {
 
 .upload-form .btn:hover {
     background: #006f2c;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem 30px;
+        flex-wrap: wrap;
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav .nav-links li {
+        margin: 1rem 0;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to right, #009345, #009345, #87C139);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        z-index: 1000;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .container {
+        padding: 0 15px;
+        margin-top: 80px;
+    }
 }

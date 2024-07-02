@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/inovasi-tampilan.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
 
   <body>
@@ -69,28 +71,31 @@
     </div>
 
     <div id="form-container" class="form-container">
-      <div class="form-content">
-        <h3>Ubah Detail</h3>
-        <form action="#">
-          <label for="publikasi">Kategori</label>
-          <select id="publikasi" name="publikasi">
-            <option value="">Pilih Kategori</option>
-          </select>
+  <div class="form-content">
+    <span class="close-btn" onclick="closeForm()">&times;</span>
+    <h3>Ubah Detail</h3>
+    <form action="#">
+      <label for="publikasi">Kategori</label>
+      <select id="publikasi" name="publikasi">
+        <option value="">Pilih Kategori</option>
+      </select>
 
-          <label for="judul">OPD</label>
-          <input type="text" id="judul" name="judul" placeholder="OPD" />
+      <label for="judul">OPD</label>
+      <input type="text" id="judul" name="judul" placeholder="OPD" />
 
-        <label for="judul">Nama Inovasi</label>
-        <input type="text" id="judul" name="judul" placeholder="Nama Inovasi">
+      <label for="judul">Nama Inovasi</label>
+      <input type="text" id="judul" name="judul" placeholder="Nama Inovasi">
 
-        <label for="publikasi">Bentuk Inovasi Daerah</label>
-        <select id="publikasi" name="publikasi">
-            <option value="">Pilih</option>
-        </select>
+      <label for="publikasi">Bentuk Inovasi Daerah</label>
+      <select id="publikasi" name="publikasi">
+          <option value="">Pilih</option>
+      </select>
 
-          <button type="submit" class="btn-green">Simpan</button>
-        </form>
-      </div>
+      <button type="submit" class="btn-green">Simpan</button>
+    </form>
+  </div>
+</div>
+
     </div>
 
     <footer>

@@ -45,3 +45,14 @@ document.getElementById('uploadBtn').addEventListener('click', function (event) 
     // Hide the form after handling the upload
     document.getElementById('form-container').style.display = 'none';
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuIcon = document.getElementById("menu-icon");
+    const navLinks = document.getElementById("nav-links");
+
+    menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+});
+

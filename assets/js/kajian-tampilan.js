@@ -18,3 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+document.getElementById('menu-icon').onclick = function () {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+};
+
